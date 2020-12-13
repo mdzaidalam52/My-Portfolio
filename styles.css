@@ -28,11 +28,6 @@ h1{
     display: inline;
 }
 
-.navbar li a:hover{
-    color: rgb(255, 115, 0);
-    cursor: pointer;
-}
-
 .navbar{
     flex-direction: row;
     width: 100vw;
