@@ -1,6 +1,15 @@
 body{
     background-color: rgb(4, 2, 0);
     color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h3{
+    margin-bottom: 2rem;
+}
+
+h1{
+    margin-bottom: 3rem;
 }
 
 .flex-container{
@@ -37,7 +46,7 @@ body{
     flex-direction: column;
     height: 100vh;
     justify-content: center;
-    background-image: linear-gradient(to bottom, rgb(19, 8, 0), #000, #000 , rgb(19, 8, 0));
+    background-image: linear-gradient(to bottom, rgb(38, 16, 0), #000, #000, #000 , rgb(38, 16, 0));
 }
 
 .home h1{
@@ -67,6 +76,7 @@ img{
 
 .left{
     flex-direction: row;
+    margin-bottom: 8rem;
 }
 
 .left img{
@@ -82,8 +92,70 @@ p{
 
 .right{
     flex-direction: row-reverse;
+    margin-bottom: 8rem;
 }
 
 .right img{
     margin-left: 2em;
+}
+
+a img{
+    height: 30px;
+    width: 30px;
+}
+
+p{
+    line-height: 2rem;
+}
+
+.contact{
+    flex-direction: row;
+    height: 30vh;
+    margin: auto 0 0 0;
+    background-color: #121212;
+    justify-content: center;
+}
+
+.contact a{
+    margin: auto 1rem;
+}
+
+a img{
+    width: 30px;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 900px){
+    .left{
+        flex-direction: column;
+    }
+    .left img{
+        width: 100%;
+        margin: 2rem 0;
+
+    }
+
+    .right{
+        flex-direction: column;
+    }
+    .right img{
+        width: 100%;
+        margin: 2rem 0;
+
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+    .navbar li a{
+        margin: 0.67rem 0.2rem 
+    }
+}
+
+a img:hover{
+    animation: pop 0.2s ease-in 0s 1 normal forwards;
+}
+
+@keyframes pop{
+    to{transform: scale(1.2);}
 }
