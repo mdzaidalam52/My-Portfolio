@@ -1,0 +1,89 @@
+body{
+    background-color: rgb(4, 2, 0);
+    color: white;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.navbar li a{
+    text-decoration: none;
+    color: white;
+    margin: 0.67rem 0.5rem;
+    font-size: 1.2rem;
+}
+
+.navbar li{
+    list-style-type: none;
+    display: inline;
+}
+
+.navbar li a:hover{
+    color: rgb(255, 115, 0);
+    cursor: pointer;
+}
+
+.navbar{
+    flex-direction: row;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #000;
+}
+
+.home{
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, rgb(19, 8, 0), #000, #000 , rgb(19, 8, 0));
+}
+
+.home h1{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 200;
+}
+
+.home h3{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 400;
+}
+
+.home >*{
+    margin: 0.25em auto;
+}
+
+img{
+    width: 20vw;
+    box-shadow: 0px 0px 10px rgb(255, 115, 0);
+}
+
+.box{
+    width: 90vw;
+    margin: 3em auto;
+}
+
+.left{
+    flex-direction: row;
+}
+
+.left img{
+    margin-right: 2em;
+}
+
+p{
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    font-weight: 300;
+    margin: auto 0;
+}
+
+.right{
+    flex-direction: row-reverse;
+}
+
+.right img{
+    margin-left: 2em;
+}
